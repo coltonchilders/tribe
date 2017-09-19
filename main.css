@@ -1,0 +1,141 @@
+@-webkit-keyframes pop {
+    to {
+        -webkit-transform: scale(1.05,1.05);
+    }
+}
+
+html, body {
+    margin: 0;
+    width: 100%;
+    background: white;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+p {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.header {
+    text-align: center;
+    padding: 10px;
+    margin: 10%;
+    position: fixed;
+    transition: 2s;
+}
+
+.offset {
+    padding-top: 1000px;
+    text-align: center;
+    transition: 2s;
+    background: white;
+}
+
+
+.header.shrink {
+    transition: 2s;
+    height: 120px;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    opacity: 0.98;
+}
+
+.offset.shrink {
+    padding-top: 900px;
+}
+
+.shrink > img {
+    height: 100px;
+    width: 200px;
+}
+
+.email-form {
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.success-message {
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.submitBtn {
+    background-color: darkcyan;
+    color: aliceblue;
+    font-size: 32px;
+    font-family: 'PT Sans', sans-serif;
+    cursor: pointer;
+    margin: 30px 15px;
+    padding: 15px 32px;
+    border: none;
+    border-radius: 4px;
+}
+
+.emailField {
+    text-align: center;
+    color: dimgray;
+}
+
+.subscribe {
+    background-color: #FBFBFB;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.bio {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 10px;
+}
+
+.sub-groups {
+    text-align: center;
+}
+
+input {
+    font-size: 32px;
+    width: 60%;
+    height: 50px;
+    text-align: center;
+}
+
+.sub-groups {
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.sub-group-desc {
+    min-height: 450px;
+    max-width: 500px;
+    background-color: #FBFBFB;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 10px;
+    align-content: center;
+}
+
+.sub-group-desc:hover {
+    -webkit-animation: pop .3s forwards;
+    background-color: #F7F7F7;
+}
+
+img[alt] {
+}
+
+
+
+
+

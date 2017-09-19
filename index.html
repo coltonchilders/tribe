@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html dir="ltr" lang="English">
+    
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="main.css">
+   
+      <!-- bootstrap & fontawesome css -->
+      <link href="http://cdn.jsdelivr.net/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"/>
+      <link rel="stylesheet" href="http://cdn.jsdelivr.net/fontawesome/4.1.0/css/font-awesome.min.css" />
+
+      <!-- BootstrapValidator CSS -->
+      <link rel="stylesheet" href="http://cdn.jsdelivr.net/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css"/>
+
+      <!-- jQuery and Bootstrap JS -->
+      <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery/1.11.1/jquery.min.js"></script>
+      <script type="text/javascript" src="http://cdn.jsdelivr.net/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+      <!-- BootstrapValidator JS -->
+      <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"></script>
+      
+      <!-- Animated Loading Icon -->
+      <style type="text/css">
+          .glyphicon-refresh-animate {
+              -animation: spin .7s infinite linear;
+              -webkit-animation: spin2 .7s infinite linear;
+          }
+          @-webkit-keyframes spin2 {
+              from { -webkit-transform: rotate(0deg);}
+              to { -webkit-transform: rotate(360deg);}
+          }
+          @keyframes spin {
+              from { transform: scale(1) rotate(0deg);}
+              to { transform: scale(1) rotate(360deg);}
+          }
+              
+        @import url('https://fonts.googleapis.com/css?family=Asap+Condensed|PT+Sans');
+      </style>
+       
+    <title>tribe</title>
+      
+
+    <div class="header">
+        <img 
+        longdesc="tribe-main-logo-no-subtext"
+        class="img-responsive"
+        src="https://s3.us-east-2.amazonaws.com/tribe-images-us/tribe-main-logo.png">
+    </div>
+  </head>
+    
+    
+  <body>
+      <div class="container-fluid offset">
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="subscribe">
+                    <div class="bio">
+                        <p>Tribe was created to encourage open conversation, self-expression and community action at OutboundEngine. We have three sub-groups in Tribe: Women, People of Color, and LGBTQ+. Each group hosts quarterly gatherings in which interested employees can participate in discussion lead by employees and/or local speakers. This is a safe-space to ask questions and better connect with co-workers on pertinent issues.</p>
+                    </div>
+                    
+                      <form role="form" id="email-form" style="display:">
+                        <div class="email-form">
+                            <h2>Sign up for more information!</h2>
+                            <input class="email" type="text" name="email" placeholder="email">
+                            <div class="button">
+                                <button type="submit" class="submitBtn" id="postForm">Submit</button>
+                            </div>
+                        </div>
+                      </form>
+                      <div id="success-message" class="success-message" style="display:none">
+                        <h2>Thank you! We'll be in touch soon!</h2>
+                    </div>
+                </div>
+              </div>
+          </div>
+          <div class="row sub-groups">
+              <div class="col-md-4 col-sm-4">
+                  <div class="sub-group-desc">
+                      <img
+                        id="tribe-women-logo"
+                        class="img-responsive"
+                        alt=""
+                        src="https://s3.us-east-2.amazonaws.com/tribe-images-us/tribe-women-logo.png">
+                      <p>Tribe Women promotes equality in the workplace for women by helping women be heard, empowering women to negotiate for salaries and promotions, and educating allies on how to quell their internal biases</p>
+                  </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                  <div class="sub-group-desc">
+                      <img
+                        id="tribe-lgbtq-logo"
+                        class="img-responsive"
+                        alt=""
+                        src="https://s3.us-east-2.amazonaws.com/tribe-images-us/tribe-lgbtq-logo.png">
+                      <p>Tribe LGBTQ+ promotes equality in the workplace for LGBTQ+ people by helping them be better understood by their peers, dispelling stereotypes and discomfort around LGBTQ+ topics, and educating allies on how to quell their internal biases</p>
+                  </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                  <div class="sub-group-desc">
+                      <img
+                        id="tribe-poc-logo"
+                        class="img-responsive"
+                        alt=""
+                        src="https://s3.us-east-2.amazonaws.com/tribe-images-us/tribe-poc-logo.png">
+                      <p>Tribe POC promotes equality in the workplace for people of color by encouraging diversity in hiring practices, empowering people of color in leadership roles, and educating allies people on how to quell their internal biases</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </body>
+    <footer>
+        <script src="validation-functions.js"></script>
+        <script src="sticky-header.js"></script>
+    </footer>
+</html>
