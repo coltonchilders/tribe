@@ -1,20 +1,6 @@
 /* google fonts */
 @import url('https://fonts.googleapis.com/css?family=Asap+Condensed|PT+Sans');
 
-/* Animated Loading Icon */
-.glyphicon-refresh-animate {
-    -animation: spin .7s infinite linear;
-    -webkit-animation: spin2 .7s infinite linear;
-}
-@-webkit-keyframes spin2 {
-    from { -webkit-transform: rotate(0deg);}
-    to { -webkit-transform: rotate(360deg);}
-}
-@keyframes spin {
-    from { transform: scale(1) rotate(0deg);}
-    to { transform: scale(1) rotate(360deg);}
-}
-
 /* sub-group info card animation */
 @-webkit-keyframes pop {
     to {
@@ -56,35 +42,43 @@ input {
     padding: 10px;
     margin: 30px;
     position: fixed;
-    transition: 2s;
+    -webkit-transition: 2s;
+    border-bottom: hidden 1px lightgrey;
 }
 
+.header > img {
+    z-index: -1;
+}
+    
 .offset {
     padding-top: 1000px;
     text-align: center;
-    transition: 2s;
+    -webkit-transition: 2s;
     background: white;
 }
 
 
 .header.shrink {
-    transition: 2s;
+    -webkit-transition: 2s;
     height: 120px;
     margin: auto;
     position: fixed;
     top: 0;
     background-color: white;
     opacity: 0.98;
+    border-bottom: solid 1px lightgrey;
 }
 
 .offset.shrink {
     padding-top: 900px;
+    -webkit-transition: 2s;
 }
 
 .shrink > img {
     height: 100px;
     width: 200px;
-}
+    margin: auto;
+    }
 
 .email-form {
     text-align: center;
@@ -125,6 +119,12 @@ input {
     margin: 0 auto;
     padding-top: 100px;
     padding-bottom: 10px;
+}
+
+.row {
+    z-index: 10;
+    background: white;
+    position: relative;
 }
 
 .sub-group-desc {
