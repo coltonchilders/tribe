@@ -20,28 +20,10 @@
 
       <!-- BootstrapValidator JS -->
       <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"></script>
-      
-      <!-- Animated Loading Icon -->
-      <style type="text/css">
-          .glyphicon-refresh-animate {
-              -animation: spin .7s infinite linear;
-              -webkit-animation: spin2 .7s infinite linear;
-          }
-          @-webkit-keyframes spin2 {
-              from { -webkit-transform: rotate(0deg);}
-              to { -webkit-transform: rotate(360deg);}
-          }
-          @keyframes spin {
-              from { transform: scale(1) rotate(0deg);}
-              to { transform: scale(1) rotate(360deg);}
-          }
-              
-        @import url('https://fonts.googleapis.com/css?family=Asap+Condensed|PT+Sans');
-      </style>
        
     <title>tribe</title>
       
-
+    <!--Tribe logo header-->
     <div class="header">
         <img 
         longdesc="tribe-main-logo-no-subtext"
@@ -56,10 +38,11 @@
           <div class="row">
               <div class="col-md-12">
                   <div class="subscribe">
+                    <!--Tribe general description-->
                     <div class="bio">
                         <p>Tribe was created to encourage open conversation, self-expression and community action at OutboundEngine. We have three sub-groups in Tribe: Women, People of Color, and LGBTQ+. Each group hosts quarterly gatherings in which interested employees can participate in discussion lead by employees and/or local speakers. This is a safe-space to ask questions and better connect with co-workers on pertinent issues.</p>
                     </div>
-                    
+                      <!--Email submission form: ties to google spreadsheet-->
                       <form role="form" id="email-form" style="display:">
                         <div class="email-form">
                             <h2>Sign up for more information!</h2>
@@ -69,6 +52,7 @@
                             </div>
                         </div>
                       </form>
+                      <!--Success message: only displays when user clicks submit-->
                       <div id="success-message" class="success-message" style="display:none">
                         <h2>Thank you! We'll be in touch soon!</h2>
                     </div>
@@ -77,7 +61,8 @@
           </div>
           <div class="row sub-groups">
               <div class="col-md-4 col-sm-4">
-                  <div class="sub-group-desc">
+                  <!--Tribe Women card-->
+                  <div class="sub-group-desc tribe-women-card">
                       <img
                         id="tribe-women-logo"
                         class="img-responsive"
@@ -87,7 +72,8 @@
                   </div>
               </div>
               <div class="col-md-4 col-sm-4">
-                  <div class="sub-group-desc">
+                  <!--Tribe LGBTQ+ card-->
+                  <div class="sub-group-desc tribe-lgbtq-card">
                       <img
                         id="tribe-lgbtq-logo"
                         class="img-responsive"
@@ -97,7 +83,8 @@
                   </div>
               </div>
               <div class="col-md-4 col-sm-4">
-                  <div class="sub-group-desc">
+                  <!--Tribe POC card-->
+                  <div class="sub-group-desc tribe-poc-card">
                       <img
                         id="tribe-poc-logo"
                         class="img-responsive"
@@ -110,7 +97,10 @@
       </div>
   </body>
     <footer>
+        <!--Javascript files-->
+        <!--JS file to handle Google form submission-->
         <script src="validation-functions.js"></script>
+        <!--JS file to handle header animations-->
         <script src="sticky-header.js"></script>
     </footer>
 </html>
