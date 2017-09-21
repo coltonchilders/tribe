@@ -36,11 +36,21 @@
             to { transform: scale(1) rotate(360deg);}
         }
       </style>
+      
+        <!--Javascript files-->
+        <!--JS file to handle Google form submission-->
+        <script src="validation-functions.js"></script>
+        <!--JS file to handle header animations-->
+        <script src="sticky-header.js"></script>
        
     <title>tribe</title>
       
-    <!--Tribe logo header-->
-    <div class="header">
+  </head>
+    
+    
+  <body>
+      <!--Tribe logo header-->
+    <header>
 <!--        <div class="header-image">-->
             <img 
                 longdesc="tribe-main-logo-no-subtext"
@@ -50,19 +60,14 @@
         <div class="arrow">
           <i class="fa fa-angle-down fa-5x" aria-hidden="true"></i>
         </div>
-      </div>
-      
-  </head>
-    
-    
-  <body>
+      </header>
       <div class="container-fluid offset">
-          <div class="row">
+          <div class="row intro">
               <div class="col-md-12">
                   <div class="subscribe">
                     <!--Tribe general description-->
                     <div class="bio">
-                        <p>Tribe was created to encourage open conversation, self-expression and community action at OutboundEngine. We have three sub-groups in Tribe: Women, People of Color, and LGBTQ+. Each group hosts quarterly gatherings in which interested employees can participate in discussion lead by employees and/or local speakers. This is a safe-space to ask questions and better connect with co-workers on pertinent issues.</p>
+                        <p>The mission of Tribe is to promote diversity and inclusion for women, people of color, and LGBTQ+ people in the workplace through education and community. </p>
                     </div>
                       <!--Email submission form: ties to google spreadsheet-->
                       <form role="form" id="email-form" style="display:">
@@ -119,10 +124,11 @@
       </div>
   </body>
     <footer>
-        <!--Javascript files-->
-        <!--JS file to handle Google form submission-->
-        <script src="validation-functions.js"></script>
-        <!--JS file to handle header animations-->
-        <script src="sticky-header.js"></script>
+       <div class="social-icons">
+           <i class="fa fa-facebook fa-3x" aria-hidden="true"></i><i class="fa fa-twitter fa-3x" aria-hidden="true"></i><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i><i class="fa fa-tumblr fa-3x" aria-hidden="true"></i>
+        </div>
     </footer>
 </html>
+
+<!--
+

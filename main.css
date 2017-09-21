@@ -2,95 +2,114 @@
 @import url('https://fonts.googleapis.com/css?family=Asap+Condensed|PT+Sans');
 
 /* sub-group info card animation */
-@-webkit-keyframes pop2 {
-    to {
-        -webkit-transform: scale(1.05,1.05);
-    }
+@-webkit-keyframes pop2 
+{
+    to  {   -webkit-transform: scale(1.05,1.05);    }
 }
 
-@keyframes pop {
-    to {
-        transform: scale(1.05,1.05);
-    }
+@keyframes pop 
+{
+    to  {   transform: scale(1.05,1.05);    }
 }
 
 /* arrow animation */
-@-webkit-keyframes bounce2 {
-    0% { top: 0px; }
-    50% { top: 20px; }
-    100% { top: 0px; }
+@-webkit-keyframes bounce2 
+{
+    0%      {   top: 0px;     }
+    50%     {   top: 20px;    }
+    100%    {   top: 0px;     }
 }
 
-@keyframes bounce {
-    0% { top: 0px; }
-    50% { top: 20px; }
-    100% { top: 0px; }
+@keyframes bounce 
+{
+    0%      {   top: 0px;     }
+    50%     {   top: 20px;    }
+    100%    {   top: 0px;     }
 }
 
 /* html selectors */
-html, body {
+html, body 
+{
     margin: 0;
-    width: 100%;
-    background: white;
+    width:  100%;
 }
 
-h1 {
-    font-size: 48px;
+h1 
+{
+    font-size:  48px;
 }
     
-h2 {
-    text-align: center;
-    font-family: 'PT Sans', sans-serif;
+h2 
+{
+    text-align:     center;
+    font-family:    'PT Sans', sans-serif;
 }
 
-p {
-    font-family: 'PT Sans', sans-serif;
-    font-size: 18px;
+p 
+{
+    font-family:    'PT Sans', sans-serif;
+    font-size:      18px;
 }
 
-input {
-    font-size: 32px;
-    width: 60%;
-    height: 50px;
+header 
+{
+    text-align:         center;
+    padding:            10px;
+    margin:             10%;
+    height:             50%;
+    position:           fixed;
+    -webkit-transition: height 1s;
+    border-bottom:      hidden 1px lightgrey;
+}
+
+input 
+{
+    font-size:  32px;
+    width:      60%;
+    height:     50px;
     text-align: center;
 }
+
+footer {
+    background:     #F7F7F7;
+    height:         100px;
+    width:          100%;
+    align-content:  center;
+    position:       fixed; 
+    bottom:         0;
+    z-index:        1;
+}
+
 
 /* class selectors */
-.header {
-    text-align: center;
-    padding: 10px;
-    margin: auto;
-    height: 50%;
-    position: fixed;
-    -webkit-transition: height 1s;
-    border-bottom: hidden 1px lightgrey;
-}
-
-.arrow {
-    position: relative;
-    margin-top: 20%;
-    color: lightgrey;
-    animation: bounce infinite 2s ease;
-    -webkit-animation: bounce2 infinite 2s ease;
+.arrow 
+{
+    position:           relative;
+    margin-top:         10%;
+    color:              lightgrey;
+    animation:          bounce infinite 2s ease;
+    -webkit-animation:  bounce2 infinite 2s ease;
 }
     
-.offset {
-    padding-top: 1000px;
-    text-align: center;
+.offset 
+{
+    padding-top:        1000px;
+    text-align:         center;
     -webkit-transition: padding-top 1s;
-    background: white;
+    background:         white;
 }
 
 
-.header.shrink {
+header.shrink 
+{
     -webkit-transition: height .5s;
-    height: 120px;
-    margin: auto;
-    position: fixed;
-    top: 0;
-    background-color: white;
-    opacity: 0.98;
-    border-bottom: solid 1px lightgrey;
+    height:             120px;
+    margin:             auto;
+    position:           fixed;
+    top:                0;
+    background-color:   white;
+    opacity:            0.98;
+    border-bottom:      solid 1px lightgrey;
 }
 
 /*.header-image {
@@ -98,84 +117,119 @@ input {
     margin-top: 40%;
 }*/
 
-.header.shrink > .arrow {
-    display: none;
+header.shrink > .arrow 
+{
+    display:    none;
 }
 
-.offset.shrink {
-    padding-top: 900px;
+.offset.shrink 
+{
+    padding-top:        880px;
     -webkit-transition: padding-top 1s;
 }
 
-.shrink > img {
+.shrink > img 
+{
     height: 100px;
-    width: 200px;
+    width:  200px;
     margin: auto;
-    }
+}
 
-.email-form {
+.email-form 
+{
+    text-align:     center;
+    font-family:    'PT Sans', sans-serif;
+}
+
+.success-message 
+{
+    text-align:     center;
+    font-family:    'PT Sans', sans-serif;
+    margin: 100px;
+}
+
+.submitBtn 
+{
+    background:     darkcyan;
+    color:          aliceblue;
+    font-size:      32px;
+    font-family:    'PT Sans', sans-serif;
+    cursor:         pointer;
+    margin:         30px 15px;
+    padding:        15px 32px;
+    border:         none;
+    border-radius:  4px;
+}
+
+.emailField 
+{
     text-align: center;
-    font-family: 'PT Sans', sans-serif;
+    color:      dimgray;
 }
 
-.success-message {
-    text-align: center;
-    font-family: 'PT Sans', sans-serif;
+.subscribe 
+{
+    background-color:   #FBFBFB;
+    padding:            20px;
+    border-radius:      10px;
 }
 
-.submitBtn {
-    background-color: darkcyan;
-    color: aliceblue;
-    font-size: 32px;
-    font-family: 'PT Sans', sans-serif;
-    cursor: pointer;
-    margin: 30px 15px;
-    padding: 15px 32px;
-    border: none;
-    border-radius: 4px;
-}
-
-.emailField {
-    text-align: center;
-    color: dimgray;
-}
-
-.subscribe {
-    background-color: #FBFBFB;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.bio {
-    width: 70%;
-    text-align: center;
-    margin: 0 auto;
-    padding-top: 100px;
+.bio 
+{
+    width:          70%;
+    text-align:     center;
+    margin:         0 auto;
+    padding-top:    100px;
     padding-bottom: 10px;
 }
 
-.row {
+.intro
+{
     background: white;
-    position: relative;
+    position:   relative;
+    z-index:    3;
 }
 
-.sub-group-desc {
-    min-height: 450px;
-    max-width: 500px;
-    background-color: #FBFBFB;
-    margin: 20px auto;
-    border-radius: 10px;
-    padding: 10px;
-    align-content: center;
+.sub-groups
+{
+    background:         white;
+    position:           relative;
+    padding-bottom:     100px;
+    margin-bottom:      100px;
+    box-shadow:         0px 5px 5px #888;
+    z-index:            3;
 }
 
-.sub-group-desc:hover {
-    -webkit-animation: pop2 .3s forwards;
-    animation: pop .3s forwards;
-    background-color: #F7F7F7;
+.sub-group-desc 
+{
+    min-height:         450px;
+    max-width:          500px;
+    background-color:   #FBFBFB;
+    margin:             20px auto;
+    border-radius:      10px;
+    padding:            10px;
+    align-content:      center;
 }
 
+.sub-group-desc:hover 
+{
+    -webkit-animation:  pop2 .3s forwards;
+    animation:          pop .3s forwards;
+    background-color:   #F7F7F7;
+}
 
+.social-icons
+{
+    margin:         auto auto;
+    align-items:    center;
+    width:          285px;
+    height:         100%;
+}
+
+.fa-facebook, .fa-twitter, .fa-linkedin, .fa-tumblr
+{
+    margin: 30px 20px;
+}
 
 
 
