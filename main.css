@@ -65,6 +65,7 @@ header
     position:           fixed;
     -webkit-transition: height 1s;
     border-bottom:      hidden 1px lightgrey;
+    will-change:        transform; 
 }
 
 input 
@@ -183,15 +184,6 @@ header.shrink > .arrow
     border-radius:      10px;
 }
 
-.bio 
-{
-    width:          70%;
-    text-align:     center;
-    margin:         0 auto;
-    padding-top:    100px;
-    padding-bottom: 10px;
-}
-
 .intro
 {
     background: white;
@@ -199,6 +191,15 @@ header.shrink > .arrow
     z-index:    3;
     background: linear-gradient(transparent, white) !important;
 
+}
+
+.bio 
+{
+    width:          70%;
+    text-align:     center;
+    margin:         0 auto;
+    padding-top:    100px;
+    padding-bottom: 10px;
 }
 
 .sub-groups
