@@ -70,7 +70,6 @@ header
     margin:             10%;
     height:             50%;
     position:           fixed;
-    -webkit-transition: all 0.5s;
     border-bottom:      hidden 1px lightgrey;
     will-change:        transform top scroll-position; 
 }
@@ -117,6 +116,7 @@ footer {
 
 header.shrink 
 {
+    -webkit-transition: all 0.5s;
     margin:             auto;
     background-color:   white;
     opacity:            0.98;
