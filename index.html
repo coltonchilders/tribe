@@ -1,29 +1,13 @@
-
 <!DOCTYPE html>
 <html dir="ltr" lang="English">
     
   <head>
     <meta content="text/html; charset=utf-8" http-equiv="content-type">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+      <!-- CSS FILES -->
       <link rel="stylesheet" type="text/css" href="main.css">
    
-      <!-- bootstrap & fontawesome css -->
-      <link href="https://cdn.jsdelivr.net/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"/>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.1.0/css/font-awesome.min.css" />
-
-      <!-- BootstrapValidator CSS -->
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css"/>
-
-      <!-- jQuery and Bootstrap JS -->
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/1.11.1/jquery.min.js"></script>
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
-      <!-- BootstrapValidator JS -->
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"></script>
-      
-      <!-- Scroll and Reveal JS -->
-      <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-      
       <style>
           /* Animated Loading Icon */
         .glyphicon-refresh-animate {
@@ -39,13 +23,6 @@
             to { transform: scale(1) rotate(360deg);}
         }
       </style>
-      
-        <!-- Javascript files -->
-        <!-- JS file to handle Google form submission -->
-        <script src="validation-functions.js"></script>
-        <!-- JS file to handle header animations -->
-        <script src="sticky-header.js"></script>
-        
        
     <title>tribe</title>
       
@@ -55,12 +32,10 @@
   <body>
       <!--Tribe logo header-->
     <header>
-<!--        <div class="header-image">-->
-            <img 
-                longdesc="tribe-main-logo-no-subtext"
-                class="img-responsive"
-                src="https://s3.us-east-2.amazonaws.com/tribe-images-us/tribe-main-logo.png">
-<!--        </div>-->
+        <img 
+            longdesc="tribe-main-logo-no-subtext"
+            class="img-responsive"
+            src="https://s3.us-east-2.amazonaws.com/tribe-images-us/tribe-main-logo.png">
         <div class="arrow">
           <i class="fa fa-angle-down fa-5x" aria-hidden="true"></i>
         </div>
@@ -151,8 +126,35 @@
               
       </div>
       
-      <!-- JS file to handle scroll and reveal -->
-      <script src="scroll-reveal.js"></script>
+    <!-- JAVASCRIPT FILES -->
+      
+    <!-- bootstrap & fontawesome css -->
+    <link href="https://cdn.jsdelivr.net/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.1.0/css/font-awesome.min.css" />
+
+    <!-- BootstrapValidator CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css"/>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <!-- BootstrapValidator JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"></script>
+
+    <!-- Scroll and Reveal JS -->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>  
+      
+    <!-- JS file to handle scroll and reveal -->
+    <script>
+      window.sr = ScrollReveal();
+      sr.reveal('.reveal');
+    </script>
+    <!-- Javascript files -->
+    <!-- JS file to handle Google form submission -->
+    <script src="validation-functions.js"></script>
+    <!-- JS file to handle header animations -->
+    <script src="sticky-header.js"></script>
   </body>
     <footer>
        <div class="social-icons">
@@ -166,5 +168,5 @@
     </footer>
 </html>
 
-<!--
+<!-- unused code below 
 

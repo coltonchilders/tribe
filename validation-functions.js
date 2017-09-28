@@ -10,12 +10,9 @@ $(document).ready(function() {
         fields: {
             email: {
                 validators: {
-                    notEmpty: {
-                        message: 'The email address is required and cannot be empty'
-                    },
-                    emailAddress: {
-                        message: 'The email address is not a valid'
-                    }
+                   /* emailAddress: {
+                        message: 'This email address is not a valid'
+                    }*/
                 }
             }
 
