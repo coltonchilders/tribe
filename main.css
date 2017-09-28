@@ -65,7 +65,7 @@ header
     position:           fixed;
     -webkit-transition: height 1s;
     border-bottom:      hidden 1px lightgrey;
-    will-change:        transform; 
+    will-change:        transform top scroll-position; 
 }
 
 input 
@@ -103,6 +103,8 @@ footer {
     text-align:         center;
     -webkit-transition: padding-top 1s;
     background:         white;
+    will-change:        transform top scroll-position; 
+
 }
 
 
@@ -116,6 +118,8 @@ header.shrink
     background-color:   white;
     opacity:            0.98;
     border-bottom:      solid 1px lightgrey;
+    will-change:        transform top scroll-position; 
+
 }
 
 header.shrink > .arrow 
@@ -127,6 +131,8 @@ header.shrink > .arrow
 {
     padding-top:        880px;
     -webkit-transition: padding-top 1s;
+    will-change:        transform top scroll-position; 
+
 }
 
 .shrink > img 
