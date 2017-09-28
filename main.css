@@ -1,30 +1,37 @@
 /* google fonts */
 @import url('https://fonts.googleapis.com/css?family=Asap+Condensed|PT+Sans');
 
-/* sub-group info card animation */
-@-webkit-keyframes pop2 
+/* header animation */
+@-webkit-keyframes shrink
 {
-    to  {   -webkit-transform: scale(1.05,1.05);    }
+    to  {   -webkit-transform:  scale(0.25, 0.25);  }
+    to  {   -webkit-transform:  translateY(-300px); }
+}
+
+/* sub-group info card animation */
+@-webkit-keyframes w-pop 
+{
+    to  {   -webkit-transform:  scale(1.05,1.05);    }
 }
 
 @keyframes pop 
 {
-    to  {   transform: scale(1.05,1.05);    }
+    to  {   transform:  scale(1.05,1.05);    }
 }
 
 /* arrow animation */
-@-webkit-keyframes bounce2 
+@-webkit-keyframes w-bounce 
 {
-    0%      {   top: 0px;     }
-    50%     {   top: 20px;    }
-    100%    {   top: 0px;     }
+    0%      {   -webkit-transform:  translateY(0px);     }
+    50%     {   -webkit-transform:  translateY(20px);    }
+    100%    {   -webkit-transform:  translateY(0px);     }
 }
 
 @keyframes bounce 
 {
-    0%      {   top: 0px;     }
-    50%     {   top: 20px;    }
-    100%    {   top: 0px;     }
+    0%      {   -webkit-transform:  translateY(0px);     }
+    50%     {   -webkit-transform:  translateY(20px);    }
+    100%    {   -webkit-transform:  translateY(0px);     }
 }
 
 /* html selectors */
@@ -63,7 +70,7 @@ header
     margin:             10%;
     height:             50%;
     position:           fixed;
-    -webkit-transition: height 1s;
+    -webkit-transition: all 0.5s;
     border-bottom:      hidden 1px lightgrey;
 }
 
@@ -93,7 +100,7 @@ footer {
     margin-top:         10%;
     color:              lightgrey;
     animation:          bounce infinite 2s ease;
-    -webkit-animation:  bounce2 infinite 2s ease;
+    -webkit-animation:  w-bounce infinite 2s ease;
 }
     
 .offset 
@@ -107,25 +114,20 @@ footer {
 
 header.shrink 
 {
-    -webkit-transition: height .5s;
-    height:             120px;
     margin:             auto;
-    position:           fixed;
-    top:                0;
     background-color:   white;
     opacity:            0.98;
     border-bottom:      solid 1px lightgrey;
 }
 
+header.shrink.navbar-fixed-top
+{
+    height: auto;
+}
+
 header.shrink > .arrow 
 {
     display:    none;
-}
-
-.offset.shrink 
-{
-    padding-top:        880px;
-    -webkit-transition: padding-top 1s;
 }
 
 .shrink > img 
@@ -145,7 +147,7 @@ header.shrink > .arrow
 {
     text-align:     center;
     font-family:    'PT Sans', sans-serif;
-    margin:         100px;
+    margin:         10px;
 }
 
 .submitBtn 
@@ -164,7 +166,7 @@ header.shrink > .arrow
 .submitBtn:hover
 {
     background:         linear-gradient(to right, #26b789, #3da3ce);
-    -webkit-animation:  pop2 .3s forwards;
+    -webkit-animation:  w-pop .3s forwards;
     animation:          pop .3s forwards;
     box-shadow:         0 0 20px lightgray;
 
